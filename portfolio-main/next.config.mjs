@@ -4,6 +4,9 @@ import TerserPlugin from 'terser-webpack-plugin';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  experimental: {
+    appDir: true,
+  },
   images: {
     remotePatterns: [
       {
